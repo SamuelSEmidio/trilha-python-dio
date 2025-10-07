@@ -1,4 +1,4 @@
-from abc import ABC, abstractclassmethod, abstractmethod
+from abc import ABC, abstractmethod
 from datetime import datetime
 
 
@@ -139,7 +139,7 @@ class Transacao(ABC):
     def valor(self):
         pass
 
-    @abstractclassmethod
+    @abstractmethod
     def registrar(self, conta):
         pass
 
