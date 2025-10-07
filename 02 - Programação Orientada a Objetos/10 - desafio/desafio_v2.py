@@ -1,6 +1,7 @@
 import textwrap
-from abc import ABC, abstractclassmethod, abstractproperty
+
 from datetime import datetime
+from abc import ABC, abstractmethod
 
 
 class Cliente:
@@ -133,15 +134,15 @@ class Historico:
             }
         )
 
-
 class Transacao(ABC):
     @property
-    @abstractproperty
+    @abstractmethod
     def valor(self):
         pass
 
-    @abstractclassmethod
+    @abstractmethod
     def registrar(self, conta):
+        pass
         pass
 
 
